@@ -696,6 +696,7 @@ require('lazy').setup({
     -- If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`.
     'sainnhe/gruvbox-material',
     'folke/tokyonight.nvim',
+    'sainnhe/everforest',
     priority = 1000, -- Make sure to load this before all the other start plugins.
     config = function()
       ---@diagnostic disable-next-line: missing-fields
@@ -710,7 +711,8 @@ require('lazy').setup({
       -- Like many other themes, this one has different styles, and you could load
       -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
       -- vim.cmd.colorscheme 'tokyonight-day'
-      vim.cmd.colorscheme 'gruvbox-material'
+
+      -- vim.cmd.colorscheme 'everforest'
     end,
   },
 
@@ -887,6 +889,8 @@ end
 --    end, { buffer = args.buf, desc = 'Comment selected lines' })
 --  end,
 --})
+
+vim.cmd.colorscheme 'everforest'
 
 --vim.keymap.set('v', '<leader>c', string.format(":'<,'>normal 0i%s<CR>", get_comment_prefix()), { desc = 'Comment selected lines' })
 --vim.keymap.set('v', '<leader>c', string.format(":'<,'>normal 0i%s<CR>", vim.bo.commentstring:gsub('%s+$', '')), { desc = 'Comment selected lines' })
