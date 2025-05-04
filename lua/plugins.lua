@@ -64,13 +64,12 @@ require('lazy').setup({
     end,
   },
 
-
--- add this to your lua/plugins.lua, lua/plugins/init.lua,  or the file you keep your other plugins:
+  -- add this to your lua/plugins.lua, lua/plugins/init.lua,  or the file you keep your other plugins:
   {
     'numToStr/Comment.nvim',
     opts = {
-        -- add any options here
-    }
+      -- add any options here
+    },
   },
 
   -- NOTE: Plugins can also be configured to run Lua code when they are loaded.
@@ -828,6 +827,8 @@ require('lazy').setup({
     },
   },
 })
+
+require('lspconfig').clojure_lsp.setup {}
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
 --
